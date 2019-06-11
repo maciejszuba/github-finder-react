@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0; color: white; }
+
+a { color: inherit; text-decoration: none; }
+
+a:hover { color: #e8fd27; }
+
+ul { list-style: none; }
+
+button { border: solid 3px white; border-radius: 5px; background-color: #223c85; }
+
+button:active { margin-left: 100px; }
+
+html { min-height: 100vh; font-family: 'Krub', sans-serif; font-weight: 300; }
+
+body { background-color: #4c86bb; height: 100%; }
+/*# sourceMappingURL=style.css.map */

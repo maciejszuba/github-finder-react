@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: $font;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover{
+        color: $a_hover;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: solid 3px white;
+    border-radius: 5px;
+    background-color: $btn_background;
+
+    &:active{
+        margin-left: 100px;
+    }
+}
+
+html {
+    min-height: 100vh;
+    font-family: 'Krub', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: $background;
+    height: 100%;
+}
