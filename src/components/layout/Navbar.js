@@ -1,29 +1,38 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom';
 
 
-export class Navbar extends Component {
-
-    static defaultProps = {
-        icon: 'fab fa-github m',
-        title: 'GitHub Finder'
-    };
-
-    static propTypes = {
-        icon: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired
-    };
-
-    render() {
-        return (
-            <nav className = 'navbar bg-primary'>
-                <h1>
-                    <i className={this.props.icon}/> 
-                    {this.props.title}
-                </h1>
-            </nav>
-        )
-    }
+const Navbar = ({icon, title}) => {
+  
+    return (
+        <nav className = 'navbar bg-primary'>
+            <h1>
+                <i className={icon}/> 
+                {title}
+            </h1>
+            <ul>
+                <li>
+                    <Link to = '/'>Home</Link>
+                </li>
+                <li>
+                    <Link to = '/about'>About</Link>
+                </li>
+            </ul>
+        </nav>
+    )
 }
+
+Navbar.defaultProps = {
+    icon: 'fab fa-github m',
+    title: 'GitHub Finder'
+};
+
+Navbar.propTypes = {
+    icon: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+};
+
+
 
 export default Navbar
